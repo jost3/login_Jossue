@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.buttonIngreso = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonRegistro = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,16 +64,6 @@
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::inicio_de_sesion_2.Properties.Resources.segundo;
-            this.pictureBox1.Location = new System.Drawing.Point(127, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 129);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -133,6 +123,7 @@
             this.buttonIngreso.TabIndex = 7;
             this.buttonIngreso.Text = "Ingresar";
             this.buttonIngreso.UseVisualStyleBackColor = false;
+            this.buttonIngreso.Click += new System.EventHandler(this.buttonIngreso_Click);
             // 
             // label3
             // 
@@ -156,6 +147,16 @@
             this.buttonRegistro.TabIndex = 9;
             this.buttonRegistro.Text = "Registrarme";
             this.buttonRegistro.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::inicio_de_sesion_2.Properties.Resources.segundo;
+            this.pictureBox1.Location = new System.Drawing.Point(127, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 129);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
