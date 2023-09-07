@@ -35,6 +35,8 @@
             this.textUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textPass = new System.Windows.Forms.TextBox();
+            this.Muestra = new System.Windows.Forms.CheckBox();
+            this.buttonIngreso = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -107,11 +109,36 @@
             this.textPass.Size = new System.Drawing.Size(179, 30);
             this.textPass.TabIndex = 5;
             // 
+            // Muestra
+            // 
+            this.Muestra.AutoSize = true;
+            this.Muestra.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Muestra.Location = new System.Drawing.Point(218, 351);
+            this.Muestra.Name = "Muestra";
+            this.Muestra.Size = new System.Drawing.Size(69, 20);
+            this.Muestra.TabIndex = 6;
+            this.Muestra.Text = "Mostrar";
+            this.Muestra.UseVisualStyleBackColor = true;
+            // 
+            // buttonIngreso
+            // 
+            this.buttonIngreso.BackColor = System.Drawing.Color.Red;
+            this.buttonIngreso.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIngreso.ForeColor = System.Drawing.Color.White;
+            this.buttonIngreso.Location = new System.Drawing.Point(147, 388);
+            this.buttonIngreso.Name = "buttonIngreso";
+            this.buttonIngreso.Size = new System.Drawing.Size(100, 34);
+            this.buttonIngreso.TabIndex = 7;
+            this.buttonIngreso.Text = "Ingresar";
+            this.buttonIngreso.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 450);
+            this.ClientSize = new System.Drawing.Size(409, 460);
+            this.Controls.Add(this.buttonIngreso);
+            this.Controls.Add(this.Muestra);
             this.Controls.Add(this.textPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textUsuario);
@@ -137,6 +164,8 @@
         private System.Windows.Forms.TextBox textUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textPass;
+        private System.Windows.Forms.CheckBox Muestra;
+        private System.Windows.Forms.Button buttonIngreso;
     }
 }
 
