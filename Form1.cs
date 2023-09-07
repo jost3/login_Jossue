@@ -105,7 +105,9 @@ namespace inicio_de_sesion_2
 
         private void buttonRegistro_Click(object sender, EventArgs e)
         {
-            
+            Form2 r = new Form2();
+            r.Show();
+            this.Hide();
         }
     }
 }
