@@ -37,6 +37,15 @@ namespace inicio_de_sesion_2
             String sql = "select textUsuario,textPass from textUsuarios where textUsuario = '" + usuario + "' AND textPass = '" + password + "' ";
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                this.Hide();
+                MessageBox.Show("Bienvenido " + usuario);
+            }
+            else
+            {
+                MessageBox.Show("No existe  este usuario" + usuario);
+            }
         }
     }
 }
