@@ -82,6 +82,7 @@
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(179, 30);
             this.textUsuario.TabIndex = 3;
+            this.textUsuario.Leave += new System.EventHandler(this.textUsuario_Leave);
             // 
             // label2
             // 

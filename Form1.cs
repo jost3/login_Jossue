@@ -34,7 +34,7 @@ namespace inicio_de_sesion_2
                 MessageBox.Show("Error" + ex.ToString());
                 throw;
             }
-            String sql = "select textUsuario,textPass from textUsuarios where textUsuario = '" + usuario + "' AND textPass = '" + password + "' ";
+            String sql = "select user_log,pass_log from inicio_sesion where user_log = '" + usuario + "' AND textPass = '" + password + "' ";
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
@@ -46,6 +46,11 @@ namespace inicio_de_sesion_2
             {
                 MessageBox.Show("No existe  este usuario" + usuario);
             }
+        }
+
+        private void textUsuario_Leave(object sender, EventArgs e)
+        {
+
         }
     }
 }
