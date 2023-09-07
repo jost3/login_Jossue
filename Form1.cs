@@ -20,9 +20,21 @@ namespace inicio_de_sesion_2
 
         private void buttonIngreso_Click(object sender, EventArgs e)
         {
-            String user_log, pass_log;
-            user_log = textUsuario.Text;
-            pass_log = textPass.Text;
+            String usuario, password;
+            usuario = textUsuario.Text;
+            password = textPass.Text;
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-7LDGQBD;Initial Catalog=login;Integrated Security=True");
+            try
+            {
+                con.Open();
+                MessageBox.Show("conexion exitosa");
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show("Error" + ex.ToString());
+                throw;
+            }
+            String sql = "INSERT INTO  login (user_log,pass_log)"
         }
     }
 }
