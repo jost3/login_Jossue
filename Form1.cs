@@ -34,7 +34,9 @@ namespace inicio_de_sesion_2
                 MessageBox.Show("Error" + ex.ToString());
                 throw;
             }
-            String sql = "INSERT INTO  login (user_log,pass_log)"
+            String sql = "select textUsuario,textPass from textUsuarios where textUsuario = '" + usuario + "' AND textPass = '" + password + "' ";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
         }
     }
 }
