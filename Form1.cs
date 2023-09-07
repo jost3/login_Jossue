@@ -27,14 +27,13 @@ namespace inicio_de_sesion_2
             try
             {
                 con.Open();
-                MessageBox.Show("conexion exitosa");
             }
             catch(SqlException ex)
             {
                 MessageBox.Show("Error" + ex.ToString());
                 throw;
             }
-            String sql = "select user_log,pass_log from inicio_sesion where user_log = '" + usuario + "' AND textPass = '" + password + "' ";
+            String sql = "select user_log,pass_log from inicio_sesion where user_log = '" + usuario + "' AND pass_log = '" + password + "' ";
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
