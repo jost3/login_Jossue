@@ -82,6 +82,7 @@
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(179, 30);
             this.textUsuario.TabIndex = 3;
+            this.textUsuario.Enter += new System.EventHandler(this.textUsuario_Enter);
             this.textUsuario.Leave += new System.EventHandler(this.textUsuario_Leave);
             // 
             // label2
@@ -101,6 +102,8 @@
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(179, 30);
             this.textPass.TabIndex = 5;
+            this.textPass.Enter += new System.EventHandler(this.textPass_Enter);
+            this.textPass.Leave += new System.EventHandler(this.textPass_Leave);
             // 
             // Muestra
             // 
@@ -112,6 +115,7 @@
             this.Muestra.TabIndex = 6;
             this.Muestra.Text = "Mostrar";
             this.Muestra.UseVisualStyleBackColor = true;
+            this.Muestra.CheckedChanged += new System.EventHandler(this.Muestra_CheckedChanged);
             // 
             // buttonIngreso
             // 

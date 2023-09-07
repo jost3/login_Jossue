@@ -50,6 +50,44 @@ namespace inicio_de_sesion_2
 
         private void textUsuario_Leave(object sender, EventArgs e)
         {
+            if (textUsuario.Text == "")
+            {
+                textUsuario.Text = "ingrese su usuario";
+                textUsuario.ForeColor = Color.Black;
+            }
+        }
+
+        private void textUsuario_Enter(object sender, EventArgs e)
+        {
+            if (textUsuario.Text == "ingrese su usuario")
+            {
+                textUsuario.Text = "";
+                textUsuario.ForeColor = Color.Black;
+            }
+        }
+
+        private void textPass_Leave(object sender, EventArgs e)
+        {
+            if (textPass.Text == "")
+            {
+                textPass.Text = "ingrese su usuario";
+                textPass.ForeColor = Color.Black;
+                textPass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void textPass_Enter(object sender, EventArgs e)
+        {
+            if (textPass.Text == "ingrese su usuario")
+            {
+                textPass.Text = "";
+                textPass.ForeColor = Color.Black;
+                textPass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void Muestra_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }
