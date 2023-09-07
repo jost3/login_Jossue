@@ -40,6 +40,9 @@ namespace inicio_de_sesion_2
             {
                 this.Hide();
                 MessageBox.Show("Bienvenido " + usuario);
+                this.Hide();
+                Form3 a1 = new Form3();
+                a1.Show();
             }
             else
             {
@@ -87,7 +90,7 @@ namespace inicio_de_sesion_2
 
         private void Muestra_CheckedChanged(object sender, EventArgs e)
         {
-            if(Muestra.Checked == true)
+            if(string.IsNullOrWhiteSpace(textPass.Text))
             {
                 textPass.UseSystemPasswordChar = false;
             }

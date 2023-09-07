@@ -50,7 +50,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 43);
+            this.panel1.Size = new System.Drawing.Size(420, 43);
             this.panel1.TabIndex = 0;
             // 
             // btnCerrar
@@ -58,7 +58,7 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.Color.Red;
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(364, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(375, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(33, 23);
             this.btnCerrar.TabIndex = 1;
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 525);
+            this.ClientSize = new System.Drawing.Size(420, 525);
             this.Controls.Add(this.buttonRegistro);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonIngreso);
