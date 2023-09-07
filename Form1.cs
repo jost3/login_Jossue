@@ -88,7 +88,24 @@ namespace inicio_de_sesion_2
 
         private void Muestra_CheckedChanged(object sender, EventArgs e)
         {
+            if(Muestra.Checked == true)
+            {
+                textPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textPass.UseSystemPasswordChar = true;
+            }
+        }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonRegistro_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

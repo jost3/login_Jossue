@@ -64,6 +64,7 @@
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.Text = "X";
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label1
             // 
@@ -152,6 +153,7 @@
             this.buttonRegistro.TabIndex = 9;
             this.buttonRegistro.Text = "Registrarme";
             this.buttonRegistro.UseVisualStyleBackColor = true;
+            this.buttonRegistro.Click += new System.EventHandler(this.buttonRegistro_Click);
             // 
             // pictureBox1
             // 
