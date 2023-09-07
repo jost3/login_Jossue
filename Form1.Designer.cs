@@ -37,6 +37,8 @@
             this.textPass = new System.Windows.Forms.TextBox();
             this.Muestra = new System.Windows.Forms.CheckBox();
             this.buttonIngreso = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonRegistro = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -132,11 +134,36 @@
             this.buttonIngreso.Text = "Ingresar";
             this.buttonIngreso.UseVisualStyleBackColor = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(129, 439);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(141, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "¿No estas registrado?";
+            // 
+            // buttonRegistro
+            // 
+            this.buttonRegistro.FlatAppearance.BorderSize = 0;
+            this.buttonRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegistro.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegistro.ForeColor = System.Drawing.Color.Red;
+            this.buttonRegistro.Location = new System.Drawing.Point(147, 479);
+            this.buttonRegistro.Name = "buttonRegistro";
+            this.buttonRegistro.Size = new System.Drawing.Size(89, 23);
+            this.buttonRegistro.TabIndex = 9;
+            this.buttonRegistro.Text = "Registrarme";
+            this.buttonRegistro.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 460);
+            this.ClientSize = new System.Drawing.Size(409, 525);
+            this.Controls.Add(this.buttonRegistro);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonIngreso);
             this.Controls.Add(this.Muestra);
             this.Controls.Add(this.textPass);
@@ -166,6 +193,8 @@
         private System.Windows.Forms.TextBox textPass;
         private System.Windows.Forms.CheckBox Muestra;
         private System.Windows.Forms.Button buttonIngreso;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonRegistro;
     }
 }
 
